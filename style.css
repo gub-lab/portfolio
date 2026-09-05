@@ -1,0 +1,130 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  margin: 50px;
+
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  font-size: 20px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.heure {
+  font-size: 20px;
+}
+
+.points {
+  animation: clignoter 1s infinite;
+}
+
+@keyframes clignoter {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.desc {
+  position: fixed;
+
+  bottom: 50px;
+  right: 50px;
+
+  width: 320px;
+
+  padding: 21px;
+  border-radius: 22px 11px 11px 11px;
+
+  background-color: #d3d3d3;
+
+  outline: none;
+  overflow-wrap: break-word;
+
+  font-weight: 300;
+
+  cursor: grab;
+}
+
+.desc:active {
+  cursor: grabbing;
+}
+
+.liste ul {
+  list-style: none;
+  position: fixed;
+
+  bottom: 50px;
+  padding: 0;
+  margin: 0;
+
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.liste li {
+  display: flex;
+  gap: 10px;
+  padding-top: 5px;
+  padding-right: 30px;
+}
+
+.projet {
+  display: flex;
+}
+
+.violet {
+  color: #EA00FF;
+}
+
+.rouge {
+  color: #FF0000;
+}
+
+.bleu {
+  color: #0015FF;
+}
+
+.noir {
+  color: #000000;
+}
+
+
+img {
+  animation: tourner 1s linear infinite;
+  animation-play-state: paused;
+  transform-origin: center;
+}
+
+img:hover {
+  animation-play-state: running;
+}
+
+@keyframes tourner {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

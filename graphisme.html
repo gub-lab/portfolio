@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUB-FIELD</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html">
+            <img src="images/logo transparent.svg" alt="Accueil" width="67">
+        </a>
+
+        <div class="heure">
+            <span id="heures">00</span>
+            <span class="points">:</span>
+            <span id="minutes">00</span>
+        </div>
+
+        <script src="heure.js"></script>
+
+    </header>
+
+
+    <div>
+
+        <nav class="liste">
+            <ul class="projet">
+                <a href="graphisme.html">
+                    <li class="violet"><img src="images/icon graphisme.svg" alt="icon graphisme" width="20">GRAPHISME
+                    </li>
+                </a>
+
+                <a href="gamedev.html">
+                    <li class="noir">PROJET 1</li>
+                </a>
+
+                <a href="3d.html">
+                    <li class="noir">PROJET 2</li>
+                </a>
+
+                <a href="autre.html">
+                    <li class="noir">PROJET 3</li>
+                </a>
+            </ul>
+        </nav>
+
+        <div class="desc" contenteditable="true" spellcheck="false">
+            <p>
+                La barre restera collée en bas de la fenêtre, même pendant le défilement.
+
+                Si elle doit seulement être poussée en bas lorsque le contenu est court, sans rester fixe pendant le
+                scroll,
+                utilise plutôt :
+            </p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>

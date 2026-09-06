@@ -10,6 +10,12 @@ description.addEventListener("pointerdown", (event) => {
 
   decalageX = event.clientX - position.left;
   decalageY = event.clientY - position.top;
+
+  description.style.bottom = "auto";
+  description.style.right = "auto";
+
+  description.style.left = `${position.left}px`;
+  description.style.top = `${position.top}px`;
 });
 
 description.addEventListener("pointermove", (event) => {

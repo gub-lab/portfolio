@@ -23,7 +23,7 @@ p {
 }
 
 .heure {
-  font-size: 20px;
+  font-size: 32px;
 }
 
 .points {
@@ -44,6 +44,7 @@ p {
 }
 
 .desc {
+
   position: fixed;
 
   bottom: 50px;

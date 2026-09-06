@@ -4,15 +4,15 @@ a {
 }
 
 body {
-  margin: 50px;
-
+  margin: 0;
+  padding: 0;
   font-family: "Inter", sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#logo {
+  position: fixed;
+  left: 50px;
+  top: 50px
 }
 
 p {
@@ -22,8 +22,16 @@ p {
   padding: 0;
 }
 
-.heure {
+.galerie img {
+  width: 100%;
+}
+
+
+#heure {
   font-size: 32px;
+  position: fixed;
+  right: 50px;
+  top: 50px;
 }
 
 .points {
@@ -69,24 +77,31 @@ p {
   cursor: grabbing;
 }
 
-.liste ul {
+.liste{
   list-style: none;
   position: fixed;
 
   bottom: 50px;
-  padding: 0;
-  margin: 0;
-
+  left: 50px;
+  
   font-size: 32px;
   font-weight: bold;
 }
 
+.liste ul {
+  padding: 0;
+  margin: 0;
+}
+
 .liste li {
   display: flex;
+
   gap: 10px;
+
   padding-top: 5px;
   padding-right: 30px;
 }
+
 
 .projet {
   display: flex;
@@ -109,13 +124,13 @@ p {
 }
 
 
-img {
+.tournable {
   animation: tourner 1s linear infinite;
   animation-play-state: paused;
   transform-origin: center;
 }
 
-img:hover {
+.tournable:hover {
   animation-play-state: running;
 }
 

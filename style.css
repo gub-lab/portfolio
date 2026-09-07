@@ -191,11 +191,37 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-  .desc {
-    width: 100px;
+  .boite-desc {
+    width: 130px;
+    font-size: 1px;
+    right: 20px;
+    padding: 13px;
+    padding-right: 10px;
   }
   .gub {
     display: none
+  }
+
+  .liste {
+    font-size: 20px;
+    left: 20px;
+    top: 20px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .contact {
+    left: 20px;
+  }
+
+  .info {
+    right: 20px;
+  }
+
+  .boite-desc p {
+    font-size: 12px;
   }
 }
 

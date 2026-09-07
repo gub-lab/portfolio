@@ -11,7 +11,9 @@ body {
   cursor:crosshair;
 }
   
-
+.petit-mot {
+  font-size: 3px;
+}
 
 
 
@@ -27,7 +29,7 @@ body {
   width: 100%;
 }
 
-.desc {
+.boite-desc {
   position: fixed;
   visibility: hidden;
   bottom: 40px;
@@ -46,7 +48,7 @@ body {
   font-weight: 300;
 
   cursor: grab;
-  animation: apparition 0.5s ease 1s forwards;
+  animation: apparition 0.5s ease 1.5s forwards;
 }
 
 @keyframes apparition {
@@ -60,11 +62,11 @@ body {
   }
 }
 
-.desc:active {
+.boite-desc:active {
   cursor: grabbing;
 }
 
-.desc p {
+.boite-desc p {
   font-size: 18px;
 
   margin: 0;

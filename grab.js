@@ -1,4 +1,4 @@
-const description = document.querySelector(".desc");
+const description = document.querySelector(".boite-desc");
 
 let decalageX = 0;
 let decalageY = 0;

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GUB-LAB</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/gub.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img id="logo" class="tournable" src="images/logo transparent.svg" alt="Accueil" width="67">
+    </a>
+  </header>
+
+  <div class="galerie">
+    <img src="images/knobzoom.jpg" alt="Projet 1" onclick="document.getElementById('desc').textContent = 'Bravo'">
+    <img src="images/knobwide.jpg" alt="Projet 2" onclick="document.getElementById('desc').textContent = '3'">
+    <img src="images/projet1.png" alt="Projet 3" onclick="document.getElementById('desc').textContent = '54534e'">
+  </div>
+  <div>
+
+    <nav class="liste">
+      <ul>
+
+          <li class="noir">AUTRE<img class="tournable" src="images/icon autre.svg" alt="icon autre" width="18"></li>
+
+      </ul>
+    </nav>
+
+    <div class="boite-desc" contenteditable="true" spellcheck="false">
+      <p id="desc">
+        graphosme
+      </p>
+
+    </div>
+    <script src="grab.js"></script>
+  </div>
+  <footer>
+
+    <div class="contact">
+      <span><a href="mailto:gublab01@gmail.com">gublab01@gmail.com</a></span>
+    </div>
+
+    <div id="heure">
+      <span id="heures">00</span>
+      <span class="points">:</span>
+      <span id="minutes">00</span>
+    </div>
+    <script src="heure.js"></script>
+
+    <div class="info">
+      <span>sur <a href="https://github.com/gub-lab/portfolio">Github Pages</a></span>
+    </div>
+
+  </footer>
+
+  <div class="gub">
+    <img src="images/gub.svg" alt="gub">
+  </div>
+
+</body>
+
+</html>

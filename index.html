@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GUB-LAB</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/gub.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +23,9 @@
   </header>
 
   <div class="galerie">
-    <img src="images/knobzoom.jpg" alt="Projet 1">
-    <img src="images/knobwide.jpg" alt="Projet 2">
-    <img src="images/projet1.png" alt="Projet 3">
+    <img src="images/knobzoom.jpg" alt="Projet 1" onclick="document.getElementById('desc').textContent = 'Bravo'">
+    <img src="images/knobwide.jpg" alt="Projet 2" onclick="document.getElementById('desc').textContent = '3'">
+    <img src="images/projet1.png" alt="Projet 3" onclick="document.getElementById('desc').textContent = '54534e'">
   </div>
   <div>
 
@@ -50,9 +51,9 @@
       </ul>
     </nav>
 
-    <div class="desc" contenteditable="true" spellcheck="false">
-      <p>
-        Bienvenue sur gub-lab.
+    <div class="boite-desc" contenteditable="true" spellcheck="false">
+      <p id="desc">
+        Bienvenue sur gub-lab, bonne visite. (pour + d'infos sur une image, cliquez dessus)
       </p>
 
     </div>

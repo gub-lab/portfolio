@@ -11,19 +11,27 @@ body {
   cursor: crosshair;
 }
 
-.petit-mot {
-  font-size: 3px;
-}
-
-
-
 #logo {
   position: fixed;
+  cursor: grab;
   right: 40px;
   top: 40px;
-  mix-blend-mode: overlay;
   rotate: 10deg;
+
+  animation: rotation 10s linear infinite;
 }
+
+@keyframes rotation {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+#logo:active {cursor: grabbing;}
 
 .galerie img {
   width: 100%;
@@ -47,8 +55,14 @@ body {
 
   font-weight: 300;
 
-  cursor: grab;
+  cursor: text;
+  transition: transform 0.2s ease-in-out;
   animation: apparition 0.5s ease 1.5s forwards;
+  transform-origin: bottom right;
+}
+
+.boite-desc:hover {
+  transform: scale(1.1);
 }
 
 @keyframes apparition {
@@ -62,9 +76,7 @@ body {
   }
 }
 
-.boite-desc:active {
-  cursor: grabbing;
-}
+
 
 .boite-desc p {
   font-size: 18px;
@@ -73,15 +85,17 @@ body {
   padding: 0;
 }
 
+
+
 .liste {
   list-style: none;
   position: fixed;
 
-  top: 40px;
+  top: 30px;
   left: 40px;
 
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .liste ul {
@@ -102,41 +116,28 @@ body {
   display: flex;
 }
 
-.violet {
-  color: #EA00FF;
-
+.anim-texte {
   transition: transform 0.3s ease-in-out;
 }
 
-.violet:hover {
+.anim-texte:hover {
   transform: translateX(10px);
+}
+
+.violet {
+  color: #EA00FF;
 }
 
 .rouge {
   color: #FF0000;
-  transition: transform 0.3s ease-in-out;
-}
-
-.rouge:hover {
-  transform: translateX(10px);
 }
 
 .bleu {
   color: #0015FF;
-  transition: transform 0.3s ease-in-out;
-}
-
-.bleu:hover {
-  transform: translateX(10px);
 }
 
 .noir {
   color: #000000;
-  transition: transform 0.3s ease-in-out;
-}
-
-.noir:hover {
-  transform: translateX(10px);
 }
 
 footer {

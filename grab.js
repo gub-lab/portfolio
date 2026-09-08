@@ -1,9 +1,13 @@
-const description = document.querySelector(".boite-desc");
+const description = document.querySelector("#logo");
 
 let decalageX = 0;
 let decalageY = 0;
+let deplacement = false;
 
 description.addEventListener("pointerdown", (event) => {
+  event.preventDefault();
+
+  deplacement = true;
   description.setPointerCapture(event.pointerId);
 
   const position = description.getBoundingClientRect();
@@ -13,20 +17,28 @@ description.addEventListener("pointerdown", (event) => {
 
   description.style.bottom = "auto";
   description.style.right = "auto";
-
   description.style.left = `${position.left}px`;
   description.style.top = `${position.top}px`;
 });
 
 description.addEventListener("pointermove", (event) => {
-  if (!description.hasPointerCapture(event.pointerId)) {
+  if (!deplacement || !description.hasPointerCapture(event.pointerId)) {
     return;
   }
+
+  event.preventDefault();
 
   description.style.left = `${event.clientX - decalageX}px`;
   description.style.top = `${event.clientY - decalageY}px`;
 });
 
-description.addEventListener("pointerup", (event) => {
-  description.releasePointerCapture(event.pointerId);
-});
+function terminerDeplacement(event) {
+  deplacement = false;
+
+  if (description.hasPointerCapture(event.pointerId)) {
+    description.releasePointerCapture(event.pointerId);
+  }
+}
+
+description.addEventListener("pointerup", terminerDeplacement);
+description.addEventListener("pointercancel", terminerDeplacement);

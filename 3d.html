@@ -10,41 +10,46 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+
+  <meta name="description"
+    content="GUB-LAB est un portfolio artistique présentant une sélection de travaux visuels, expérimentations et projets personnels.">
+
+  <script src="grab.js" defer></script>
+  <script src="heure.js" defer></script>
 </head>
 
 <body>
   <header>
-    <a href="index.html">
-      <img id="logo" class="tournable" src="images/logo transparent.svg" alt="Accueil" width="67">
-    </a>
-  </header>
-
-  <div class="galerie">
-    <img src="images/knobzoom.jpg" alt="Projet 1" onclick="document.getElementById('desc').textContent = 'Bravo'">
-    <img src="images/knobwide.jpg" alt="Projet 2" onclick="document.getElementById('desc').textContent = '3'">
-    <img src="images/projet1.png" alt="Projet 3" onclick="document.getElementById('desc').textContent = '54534e'">
-  </div>
-  <div>
-
+    <img id="logo" class="tournable" src="images/logo transparent.svg" alt="Accueil" width="67">
     <nav class="liste">
       <ul>
-
-          <li class="bleu">3D<img class="tournable" src="images/icon 3d.svg" alt="icon 3d" width="16"></li>
-
+        <li class="noir anim-texte"><a href="/">ACCUEIL</a><img class="tournable"
+            src="images/icon accueil.svg" alt="icon accueil" width="20">
+        </li>
+        <li class="bleu anim-texte"><a href="3d.html">3D</a><img class="tournable"
+            src="images/icon 3d.svg" alt="icon 3d" width="20">
+        </li>
       </ul>
     </nav>
+  </header>
+  <main>
+    <div class="galerie">
+      <img src="images/knobzoom.jpg" alt="Projet 1" onclick="document.getElementById('desc').textContent = 'Bravo'"
+        fetchpriority="high">
+      <img src="images/knobwide.jpg" alt="Projet 2" onclick="document.getElementById('desc').textContent = '3'">
+      <img src="images/projet1.png" alt="Projet 3" onclick="document.getElementById('desc').textContent = '54534e'">
+    </div>
 
     <div class="boite-desc" contenteditable="true" spellcheck="false">
       <p id="desc">
-        graphosme
+        Bienvenue sur gub-lab, bonne visite. (pour + d'infos sur une image, cliquez dessus)
       </p>
 
     </div>
-    <script src="grab.js"></script>
-  </div>
+
+
+  </main>
   <footer>
 
     <div class="contact">
@@ -56,17 +61,12 @@
       <span class="points">:</span>
       <span id="minutes">00</span>
     </div>
-    <script src="heure.js"></script>
 
     <div class="info">
       <span>sur <a href="https://github.com/gub-lab/portfolio">Github Pages</a></span>
     </div>
 
   </footer>
-
-  <div class="gub">
-    <img src="images/gub.svg" alt="gub">
-  </div>
 
 </body>
 

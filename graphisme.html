@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GUB-LAB</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="images/gub.svg">
+  <link rel="icon" type="image/png" href="images/icons/gub.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,29 +21,37 @@
 
 <body>
   <header>
-    <img id="logo" class="tournable" src="images/logo transparent.svg" alt="Accueil" width="67">
+    <img id="logo" class="tournable" src="images/icons/logo transparent.svg" alt="Accueil" width="67">
     <nav class="liste">
       <ul>
-        <li class="noir anim-texte"><a href="/">ACCUEIL</a><img class="tournable" src="images/icon accueil.svg"
+        <li class="noir anim-texte"><a href="/">ACCUEIL</a><img class="tournable" src="images/icons/icon accueil.svg"
             alt="icon accueil">
         </li>
         <li class="violet anim-texte"><a href="graphisme.html">GRAPHISME</a><img class="tournable"
-            src="images/icon graphisme.svg" alt="icon graphisme">
+            src="images/icons/icon graphisme.svg" alt="icon graphisme">
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <div class="galerie">
-      <img src="images/knobzoom.jpg" alt="Projet 1" onclick="document.getElementById('desc').textContent = 'Bravo'"
-        fetchpriority="high">
-      <img src="images/knobwide.jpg" alt="Projet 2" onclick="document.getElementById('desc').textContent = '3'">
-      <img src="images/projet1.png" alt="Projet 3" onclick="document.getElementById('desc').textContent = '54534e'">
+
+      <img src="images/affiche-semi.webp" alt="Affiche semi marathon"
+        onclick="document.getElementById('desc').textContent = 'Affiche du semi marathon de Plouguin, création de l\'identité graphique de l\'évènement et de plusieurs éléments graphique (affiche, plan des courses, logo).'">
+      <img src="images/affiche-rando.webp" alt="Affiche rando vtt"
+        onclick="document.getElementById('desc').textContent = 'Affiche de la rando VTT de Plouguin'">
+
+      <video src="images/gobelin.webm" loop="" autoplay="true" muted="" playsinline="true" data-wf-ignore="true"
+        class="u-cover-absolute is--hero" fetchpriority="high"
+        onclick="document.getElementById('desc').textContent = 'Petit projet en suspens de marque de vêtement GobelinGobelin autour de l\'escalade, avec la mise en place d\'un shop sur Etsy et l\'impression des t-shirts sur Printify.'"></video>
+
+
+
     </div>
 
     <div class="boite-desc" contenteditable="true" spellcheck="false">
       <p id="desc">
-        Bienvenue sur gub-lab, bonne visite. (pour + d'infos sur une image, cliquez dessus)
+        (pour + d'infos sur une image, cliquez dessus)
       </p>
 
     </div>

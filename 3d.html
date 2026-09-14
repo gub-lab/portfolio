@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GUB-LAB</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="images/gub.svg">
+  <link rel="icon" type="image/png" href="images/icons/gub.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,29 +21,37 @@
 
 <body>
   <header>
-    <img id="logo" class="tournable" src="images/logo transparent.svg" alt="Accueil" width="67">
+    <img id="logo" class="tournable" src="images/icons/logo transparent.svg" alt="Accueil" width="67">
     <nav class="liste">
       <ul>
         <li class="noir anim-texte"><a href="/">ACCUEIL</a><img class="tournable"
-            src="images/icon accueil.svg" alt="icon accueil">
+            src="images/icons/icon accueil.svg" alt="icon accueil">
         </li>
         <li class="bleu anim-texte"><a href="3d.html">3D</a><img class="tournable"
-            src="images/icon 3d.svg" alt="icon 3d">
+            src="images/icons/icon 3d.svg" alt="icon 3d">
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <div class="galerie">
-      <img src="images/knobzoom.jpg" alt="Projet 1" onclick="document.getElementById('desc').textContent = 'Bravo'"
-        fetchpriority="high">
-      <img src="images/knobwide.jpg" alt="Projet 2" onclick="document.getElementById('desc').textContent = '3'">
-      <img src="images/projet1.png" alt="Projet 3" onclick="document.getElementById('desc').textContent = '54534e'">
+      <img src="images/knobzoom.jpg" alt="knob"
+        onclick="document.getElementById('desc').textContent = 'Reproduction du clavier KNOB de worklouder'" fetchpriority="high">
+        
+      <video src="images/mode-nike.webm" loop="" autoplay="true" muted="" playsinline="true" data-wf-ignore="true"
+        class="u-cover-absolute is--hero"
+        onclick="document.getElementById('desc').textContent = 'Exercice de modélisation sur la chaussure Nike Zegama 2'"></video>
+      <video src="images/te.webm" loop="" autoplay="true" muted="" playsinline="true" data-wf-ignore="true"
+        class="u-cover-absolute is--hero"
+        onclick="document.getElementById('desc').textContent = 'Reproduction du OP-1 FIELD de Teenage Engineering'"></video>
+        <video src="images/gilec.webm" loop="" autoplay="true" muted="" playsinline="true" data-wf-ignore="true"
+        class="u-cover-absolute is--hero"
+        onclick="document.getElementById('desc').textContent = 'Rendu d\'une marque fictive de parfum GILEC'"></video>
     </div>
 
     <div class="boite-desc" contenteditable="true" spellcheck="false">
       <p id="desc">
-        Bienvenue sur gub-lab, bonne visite. (pour + d'infos sur une image, cliquez dessus)
+        (pour + d'infos sur une image, cliquez dessus)
       </p>
 
     </div>

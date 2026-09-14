@@ -9,7 +9,7 @@ body {
   padding: 0;
   font-family: "Inter", sans-serif;
   cursor: crosshair;
-  background-color: #000000;
+  background-color: #eeeeee;
 }
 
 #logo {
@@ -39,12 +39,29 @@ body {
 }
 
 .galerie {
-  columns: 2;
-  column-gap: 0px;
+  columns: 3;
+  column-gap: 10px;
+  margin: 10px;
+  
   
 }
 
+.home img{
+  width: 100%;
+}
+
 .galerie img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+  
+  
+}
+
+.galerie video {
+  margin-bottom: 10px;
+  border-radius: 10px;
   width: 100%;
   display: block;
 }
@@ -112,7 +129,7 @@ li img {
 }
 
 .anim-texte {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .anim-texte:hover {
@@ -133,6 +150,10 @@ li img {
 
 .noir {
   color: #000000;
+}
+
+.vert {
+  color: #00ff00;
 }
 
 footer {
@@ -186,7 +207,7 @@ footer a {
 @media screen and (max-width: 768px) {
 
   #logo {
-    width: 50px;
+    width: 70px;
   }
 
   .boite-desc {

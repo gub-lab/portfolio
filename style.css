@@ -235,14 +235,18 @@ footer a {
   }
 
   .liste {
-    font-size: 20px;
+    font-size: 22px;
     left: 20px;
     top: 20px;
   }
 
   li img {
-    width: 18px;
+    height: 20px;
   }
+
+  .orange img{width: 18px;}
+  .noir img{width: 18px;}
+  .bleu img{width: 16px;}
 
   footer {
     font-size: 10px;

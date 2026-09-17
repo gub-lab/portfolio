@@ -152,10 +152,12 @@ li img {
 .rouge {
   color: #FF0000;
 }
+.rouge img{width: 26px;}
 
 .bleu {
   color: #0015FF;
 }
+.bleu img{width: 22px;}
 
 .noir {
   color: #000000;
@@ -164,10 +166,12 @@ li img {
 .vert {
   color: #00df00;
 }
+.vert img{width: 26px;}
 
 .orange {
   color: #ffae00;
 }
+.orange img{width: 24px;}
 
 footer {
   color: white;

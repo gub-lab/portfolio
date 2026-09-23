@@ -7,18 +7,17 @@ a {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
-  cursor: crosshair;
-  background-color: #eeeeee;
-}
 
-body {
+  font-family: "Inter", sans-serif;
+
+  cursor: crosshair;
+
+  background-color: #ffffff;
   background-image:
     linear-gradient(#e2e2e2 1px, transparent 1px),
     linear-gradient(90deg, #e2e2e2 1px, transparent 1px);
   background-size: 100px 100px;
 
-  background-attachment: fixed;
 }
 
 
@@ -52,11 +51,11 @@ body {
   columns: 3;
   column-gap: 10px;
   margin: 10px;
-  
-  
+
+
 }
 
-.home img{
+.home img {
   width: 100%;
 }
 
@@ -65,8 +64,8 @@ body {
   margin-bottom: 10px;
   width: 100%;
   display: block;
-  
-  
+
+
 }
 
 .galerie video {
@@ -76,29 +75,28 @@ body {
   display: block;
 }
 
-
 .boite-desc {
   position: fixed;
   bottom: 50px;
   right: 50px;
 
-  width: 420px;
+  max-width: 600px;
 
   padding: 26px;
   border-radius: 30px;
 
-  background-color: #ffffffbe;
+  background-color: #e2e2e2be;
 
   outline: none;
   overflow-wrap: break-word;
+  width: fit-content;
 
   font-weight: 300;
+  text-align: right;
 
   cursor: text;
   z-index: 100;
 }
-
-
 
 .boite-desc p {
   font-size: 22px;
@@ -107,8 +105,6 @@ body {
   padding: 0;
 }
 
-
-
 .liste {
   list-style: none;
   position: fixed;
@@ -116,7 +112,7 @@ body {
   top: 40px;
   left: 50px;
 
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   z-index: 100;
 }
@@ -135,7 +131,7 @@ body {
 }
 
 li img {
-  width: 24px;
+  width: 30px;
 }
 
 .anim-texte {
@@ -153,12 +149,12 @@ li img {
 .rouge {
   color: #FF0000;
 }
-.rouge img{width: 26px;}
 
 .bleu {
   color: #0015FF;
 }
-.bleu img{width: 22px;}
+
+.bleu img { width: 26px;}
 
 .noir {
   color: #000000;
@@ -167,12 +163,11 @@ li img {
 .vert {
   color: #00df00;
 }
-.vert img{width: 26px;}
 
 .orange {
   color: #ffae00;
 }
-.orange img{width: 24px;}
+
 
 footer {
   color: white;
@@ -229,10 +224,9 @@ footer a {
   }
 
   .boite-desc {
-    width: 230px;
+    max-width: 250px;
     right: 20px;
     padding: 18px;
-    padding-right: 0px;
   }
 
   .liste {
@@ -245,9 +239,17 @@ footer a {
     height: 20px;
   }
 
-  .orange img{width: 18px;}
-  .noir img{width: 18px;}
-  .bleu img{width: 16px;}
+  .orange img {
+    width: 18px;
+  }
+
+  .noir img {
+    width: 20px;
+  }
+
+  .bleu img {
+    width: 16px;
+  }
 
   footer {
     font-size: 10px;
@@ -265,7 +267,7 @@ footer a {
     font-size: 14px;
   }
 
-  .galerie{
+  .galerie {
     columns: 1;
   }
 }

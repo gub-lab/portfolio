@@ -34,7 +34,14 @@
     </nav>
   </header>
   <main>
-    <div class="boite-desc" contenteditable="true" spellcheck="false">
+    <div class="galerie">
+      <img src="images/site.webp" alt="Image site gub-lab" fetchpriority=high
+        onclick="document.getElementById('desc').textContent = 'Le site sur lequel vous êtes! Code source disponible sur Github (lien en bas droite)'">
+      <video src="images/gub.webm" autoplay muted loop playsinline
+        onclick="document.getElementById('desc').innerHTML ='Mon premier (tout petit) jeu sur Godot, disponible sur <a href=\'https://gub-lab.itch.io/gub\' target=\'_blank\' style=\'text-decoration: underline;\'>itch.io</a> (mot de passe: 123)';"></video>
+    </div>
+
+    <div class="boite-desc" spellcheck="false">
       <p id="desc">
         <u>Languages</u>: GDScript, HTML, CSS
       </p>

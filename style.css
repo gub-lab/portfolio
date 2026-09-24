@@ -51,7 +51,10 @@ body {
   columns: 3;
   column-gap: 10px;
   margin: 10px;
+  
+}
 
+.lien {
 
 }
 
@@ -62,15 +65,21 @@ body {
 .galerie img {
   border-radius: 10px;
   margin-bottom: 10px;
+
+  border-style:dashed;
+  border-width: 1px;
+
   width: 100%;
   display: block;
-
-
 }
 
 .galerie video {
   margin-bottom: 10px;
   border-radius: 10px;
+
+  border-style:dashed;
+  border-width: 1px;
+
   width: 100%;
   display: block;
 }
@@ -86,7 +95,6 @@ body {
   border-radius: 30px;
 
   background-color: #e2e2e2be;
-
   outline: none;
   overflow-wrap: break-word;
   width: fit-content;

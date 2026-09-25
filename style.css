@@ -89,21 +89,18 @@ body {
   bottom: 50px;
   right: 50px;
 
-  max-width: 600px;
+  max-width: 30%;
 
   padding: 26px;
   border-radius: 30px;
 
   background-color: #e2e2e2be;
   outline: none;
-  overflow-wrap: break-word;
-  width: fit-content;
 
   font-weight: 300;
   text-align: right;
 
   cursor: text;
-  z-index: 100;
 }
 
 .boite-desc p {

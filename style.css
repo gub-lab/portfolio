@@ -54,10 +54,6 @@ body {
   
 }
 
-.lien {
-
-}
-
 .home img {
   width: 100%;
 }
@@ -94,7 +90,7 @@ body {
   padding: 26px;
   border-radius: 30px;
 
-  background-color: #e2e2e2be;
+  background-color: #e2e2e2e1;
   outline: none;
 
   font-weight: 300;

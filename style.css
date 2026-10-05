@@ -47,30 +47,27 @@ body {
   cursor: grabbing;
 }
 
+main {
+  margin: 10px;
+}
+
 .galerie {
   columns: 3;
   column-gap: 10px;
-  margin: 10px;
-  
-}
-
-.home img {
-  width: 100%;
 }
 
 .galerie img {
   border-radius: 10px;
-  margin-bottom: 10px;
 
   border-style:dashed;
   border-width: 1px;
 
   width: 100%;
   display: block;
+  margin-bottom: 10px;
 }
 
 .galerie video {
-  margin-bottom: 10px;
   border-radius: 10px;
 
   border-style:dashed;
@@ -78,7 +75,55 @@ body {
 
   width: 100%;
   display: block;
+  margin-bottom: 10px;
 }
+
+.img-wide img{
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 10px;
+  border-style:dashed;
+  border-width: 1px;
+  margin-bottom: 10px;
+}
+
+.galerie img:hover{border-style: solid;}
+
+.galerie video:hover{border-style: solid;}
+
+.img-wide img:hover{border-style: solid;}
+
+.galerie2 {
+  columns: 2;
+  column-gap: 10px;
+}
+
+.galerie2 img {
+  border-radius: 10px;
+
+  border-style:dashed;
+  border-width: 1px;
+
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.galerie2 video {
+  border-radius: 10px;
+
+  border-style:dashed;
+  border-width: 1px;
+
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.galerie2 img:hover{border-style: solid;}
+
+.galerie2 video:hover{border-style: solid;}
 
 .boite-desc {
   position: fixed;
@@ -180,6 +225,10 @@ footer a {
   cursor: help;
 }
 
+.espace {
+  margin: 200px;
+} 
+
 .contact {
   position: fixed;
   left: 55px;
@@ -202,6 +251,8 @@ footer a {
   animation-play-state: paused;
   transform-origin: center;
 }
+
+
 
 .anim-texte:hover .tournable {
   animation-play-state: running;
